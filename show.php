@@ -1,7 +1,7 @@
 <?php
   /************************************/
   /*      file name: show.php            */
-  /*      infor: product details   */
+  /*      information: product details   */
   /************************************/
   include "config.inc.php";		//configure file
   include "header.inc.php";		//header file

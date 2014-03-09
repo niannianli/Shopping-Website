@@ -1,7 +1,7 @@
 <?php
   /***************************************/
   /*    file name: admin/product_add.php    */
-  /*    infor: add product               */
+  /*    information: add product               */
   /***************************************/
  include "../config.inc.php";	//configue file
 // include "config.inc.php";	//configure file
