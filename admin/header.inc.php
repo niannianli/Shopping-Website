@@ -6,7 +6,6 @@
 	header('HTTP/1.0 401 Unauthorized'); 
 	die("<H2>logout</h2>");
   }
-
  
   //http to login
   if ($_SERVER['PHP_AUTH_USER']==ADMIN_USER && $_SERVER['PHP_AUTH_PW']==ADMIN_PW)

@@ -1,9 +1,10 @@
 <?php
   /***************************************/
-  /*    filename£ºadmin/product_del.php    */
-  /*    infor£ºdelete product            */
+  /*    filename: admin/product_del.php    */
+  /*    infor: delete product            */
   /***************************************/
-  include "../config.inc.php";		//configure file
+ include "../config.inc.php";		//configure file
+ // include "config.inc.php";	//configure file
   include "header.inc.php";			//admin header file
 
   $product_id = $_GET['product_id'];	//product id

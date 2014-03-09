@@ -17,7 +17,7 @@
   $address	= $_POST['address1'] . $_POST['address2']; 	//address
 ?>
 <h2>order information</h2>
-<h3>order_id£º<font color=red>M<?php echo $order_id ?></font></h3>
+<h3>order_id: <font color=red>M<?php echo $order_id ?></font></h3>
 <table width="100%" border="0" cellpadding="4" cellspacing="1" bgcolor="#0066CC">
   <tr bgcolor="#e7f0ff">
     <th>product_name</th>

@@ -1,9 +1,10 @@
 <?php
   /*********************************/
-  /*    filename£ºadmin/order.php    */
-  /*    infor£ºorder list        */
+  /*    filename: admin/order.php    */
+  /*    infor: order list        */
   /*********************************/
-  include "../config.inc.php";	//config file
+ include "../config.inc.php";	//config file
+  //include "config.inc.php";	//configure file
   include "header.inc.php";		//admin header
 
   $each_page = EACH_PAGE;				//the biggest number of orders to show in this page
@@ -63,7 +64,7 @@
   		<tr>
 			<td align="center" colspan="4">no product</td>
 		</tr>
-  	  <?
+  	  <?php
 	}
   ?>
 </table>
@@ -73,7 +74,7 @@
   $last_offset = $offset - $each_page;
   if($last_offset<0)
   {
-	?>previous<?
+	?>previous<?php
   }else{
 	?><a href="?offset=<?php echo $last_offset ?>&catid=<?php echo $category_id ?>">previous</a><?
   }

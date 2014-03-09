@@ -1,7 +1,7 @@
 <?php
   /**************************************/
-  /*    file name£ºdocart.php			    */
-  /*    info£ºupdate product in cart    */
+  /*    file name: docart.php			    */
+  /*    info: update product in cart    */
   /**************************************/
   require_once 'config.inc.php';	//configure
 

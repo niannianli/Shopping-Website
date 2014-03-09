@@ -1,7 +1,7 @@
 <?php
   /************************************/
-  /*      file name：show.php            */
-  /*      infor：product details   */
+  /*      file name: show.php            */
+  /*      infor: product details   */
   /************************************/
   include "config.inc.php";		//configure file
   include "header.inc.php";		//header file
@@ -41,7 +41,7 @@
 		<input type="hidden" name="action" value="addcart">
 		<input type="hidden" name="product_id" value="<?php echo $product_id ?>">	
 		<input name="number" value="1" type="text" size=4 maxlength="2">
-		<input type="submit" value="加入购物车">&nbsp;<input type="image" src="img/buyit.gif" alt="order">
+		<input type="submit" value="submit">&nbsp;<input type="image" src="img/buyit.gif" alt="order">
 	  </td>
 	</tr>
 	<tr>

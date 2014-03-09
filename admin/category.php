@@ -1,9 +1,10 @@
 <?php
   /************************************/
-  /*    filename£ºadmin/category.php    */
-  /*    comment£ºcategory manamgement page       */
+  /*    filename: admin/category.php    */
+  /*    comment: category manamgement page       */
   /************************************/
-  include "../config.inc.php";	//config file
+ include "../config.inc.php";	//config file
+  //include "config.inc.php";	//configure file
   include "header.inc.php";		//management page header file
 ?>
 <!-- create category -->

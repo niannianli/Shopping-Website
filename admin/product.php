@@ -1,9 +1,10 @@
 <?php
   /***********************************/
-  /*    file name£ºadmin/product.php    */
-  /*    infor£ºadd product list       */
+  /*    file name: admin/product.php    */
+  /*    infor: add product list       */
   /***********************************/
   include "../config.inc.php";	//configure file
+ // include "config.inc.php";	//configure file
   include "header.inc.php";	//admin header file
 
   $each_page = EACH_PAGE;			//records in every page

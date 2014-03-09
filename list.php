@@ -1,7 +1,7 @@
 <?php
   /********************************/
-  /*	  file name£ºlist.php	      */
-  /*	  infor£ºcategory list  */
+  /*	  file name: list.php	      */
+  /*	  infor: category list  */
   /********************************/
   include "config.inc.php";		//configure
   include "header.inc.php";		//header

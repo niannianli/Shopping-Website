@@ -1,9 +1,10 @@
 <?php
   /*****************************************/
-  /*    filename£ºadmin/category_edit.php    */
-  /*    comment£ºproducts category management page          */
+  /*    filename: admin/category_edit.php    */
+  /*    comment: products category management page          */
   /*****************************************/
-  include "../config.inc.php";	//config file
+ include "../config.inc.php";	//config file
+  //include "config.inc.php";	//configure file
   include "header.inc.php";		//header file for management
 
   $action = $_POST['action'];					//action
@@ -15,7 +16,7 @@
   if($action == 'addcat')
   {
   	if(empty($category_name)) {
-  		ExitMessage("input category name£¡");
+  		ExitMessage("input category name:");
   	}
 
 	//category_name same?
@@ -26,14 +27,14 @@
 	{
   		
 		//category_name exist, print error infor
-  		ExitMessage("category name exist, please choose another name£¡");
+  		ExitMessage("category name exist, please choose another name.");
   	}
 	else
 	{
 		//category name not exist, add new category
   		$sql = "INSERT INTO categories (category_name) VALUES('$category_name')";
   		$result = mysql_query($sql);
-  		ExitMessage("new category added£¡", "category.php");
+  		ExitMessage("new category added.", "category.php");
   	}
   }
 
@@ -44,12 +45,12 @@
   	
 	//not choose category to modify
   	if(empty($category_id)) {
-  		ExitMessage("please choose the category to modify£¡");
+  		ExitMessage("please choose the category to modify.");
   	}	
   
 	//not input new category name
   	elseif(empty($category_name))	{
-  		ExitMessage("please input new category name £¡");
+  		ExitMessage("please input new category name.");
   	}
 
   	//new category nama exists?
@@ -60,7 +61,7 @@
   	if(mysql_num_rows($result) >0){
   		
 		//category name exists, print error infor
-  		ExitMessage("category name already exists, please choose another name£¡");
+  		ExitMessage("category name already exists, please choose another name.");
   	}
 	else
 	{
@@ -69,7 +70,7 @@
   		$sql = "UPDATE categories SET category_name='$category_name'
   				WHERE category_id='$category_id'";
   		$result = mysql_query($sql);
-  		ExitMessage("category name modified£¡", "category.php");
+  		ExitMessage("category name modified.", "category.php");
   	}
   }
 
@@ -78,7 +79,7 @@
   	
 	//not choose category to modify
   	if(empty($category_id)) {
-  		ExitMessage("please choose the category to modify£¡");
+  		ExitMessage("please choose the category to modify.");
   	}	
 
   
@@ -90,7 +91,7 @@
 	{
 		
 		//there is product in this category, cannot delete
-   		ExitMessage("there is product in this category, cannot delete£¡");
+   		ExitMessage("there is product in this category, cannot delete.");
   	}
 	else
 	{
@@ -98,12 +99,12 @@
 		//delete category name
   		$sql = "DELETE FROM categories WHERE category_id='$category_id'";
   		$result = mysql_query($sql);
-   		ExitMessage("category deleted£¡", "category.php");
+   		ExitMessage("category deleted.", "category.php");
   	}
   } 
   else
   {
-  	ExitMessage("system parameters error£¡");
+  	ExitMessage("system parameters error.");
   }
 ?>
 </html>

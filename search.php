@@ -1,7 +1,7 @@
 <?php
   /**********************************/
-  /*	 file name£ºlist.php		*/
-  /*	 infor£ºcategory list	*/
+  /*	 file name:search.php		*/
+  /*	 infor: category list	*/
   /**********************************/
 
   include "config.inc.php";	//confi file

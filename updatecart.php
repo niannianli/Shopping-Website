@@ -1,7 +1,7 @@
 <?php
   /**************************************/
-  /*    file name£ºupcart.php              */
-  /*    infor£ºupdate all products in cart   */
+  /*    file name: updatecart.php              */
+  /*    infor: update all products in cart   */
   /**************************************/
   require_once 'config.inc.php';	//configure file
 

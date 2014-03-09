@@ -1,9 +1,10 @@
 <?php
   /**************************************/
-  /*    filename£ºadmin/order_show.php    */
-  /*    infor£ºorder list              */
+  /*    filename: admin/order_show.php    */
+  /*    infor: order list              */
   /**************************************/
-  include "../config.inc.php";	//config file
+ include "../config.inc.php";	//config file
+ // include "config.inc.php";	//configure file
   include "header.inc.php";	//admin header file
 
   $order_id = intval($_GET['order_id']);
@@ -69,7 +70,7 @@
   		<tr>
 			<td align="center" colspan="4">no product</td>
 		</tr>
-  	  <?
+  	  <?php
 	}
   ?>
 </table>

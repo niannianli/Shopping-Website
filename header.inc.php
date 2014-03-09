@@ -28,7 +28,7 @@
 	@$row = mysql_fetch_row($result);
      $number = intval($row[0]);	//number of products
 ?>
-<b>cart has <a href="mycart.php"><font color=red><? echo $number ?></font></a> products</b>
+<!-- <b>cart has <a href="mycart.php"><font color=red><? echo $number ?></font></a> products</b> -->
 <hr>
 	<!-- cart end -->
 <ul>

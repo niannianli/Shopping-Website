@@ -1,9 +1,10 @@
 <?php
   /***************************************/
-  /*    file name£ºadmin/product_add.php    */
-  /*    infor£ºadd product               */
+  /*    file name: admin/product_add.php    */
+  /*    infor: add product               */
   /***************************************/
-  include "../config.inc.php";	//configue file
+ include "../config.inc.php";	//configue file
+// include "config.inc.php";	//configure file
   include "header.inc.php";		//admin header
 
   if($_POST['submit'])

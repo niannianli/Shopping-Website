@@ -1,14 +1,14 @@
 <?php
   /**********************************/
-  /*      file name£ºmycart.php		*/
-  /*      infor£ºcart detail     */
+  /*      file name: mycart.php		*/
+  /*      infor: cart detail     */
   /**********************************/
   include "config.inc.php";		//congif file
   include "header.inc.php";		//header file
 
   $session_id = session_id();  //user id
 ?>
-<form action="upcart.php" method="post">
+<form action="updatecart.php" method="post">
   <h2>cart</h2>
   <table width="100%" border="0" cellpadding="4" cellspacing="1" bgcolor="#0066CC">
     <tr bgcolor="#e7f0ff">

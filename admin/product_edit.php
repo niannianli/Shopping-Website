@@ -1,9 +1,10 @@
 <?php
   /******************************************/
-  /*	  file name£ºadmin/product_edit.php	*/
-  /*	  infor£ºedit product		    */
+  /*	  file name: admin/product_edit.php	*/
+  /*	  infor: edit product		    */
   /******************************************/
   include "../config.inc.php";	//config file
+  // include "config.inc.php";	//configure file
   include "header.inc.php";		//admin header file
 
   $product_id = intval($_REQUEST['product_id']);	//product id
