@@ -78,20 +78,20 @@ select product category
    </td>
   </tr>
   <?php
-		}//endforeach 
-  	}else{//endif
+		} // endforeach 
+  	}else{ // endif
   ?>
   <tr bgcolor="#FFFFFF">
     <td colspan="4" align="center">no product in this category</td>
   </tr>
   <?php	
-	}
+	} // end else
   ?>
 </table>
 
 <p>total <font color=red><b><?php echo $total ?></b></font> records &nbsp;<b>
 <?php 
-  //output previous page
+  // output previous page
   $last_offset = $offset - $each_page;
   if($last_offset<0)
   {
@@ -102,7 +102,7 @@ select product category
 
   echo " &nbsp; ";
 
-  //output next page
+  // output next page
   $next_offset = $offset + $each_page;		
   if($next_offset>=$total)
   {
@@ -114,5 +114,5 @@ select product category
 </b>
 </p>
 <?php
-  include "footer.inc.php";		//footer
+  include "footer.inc.php";		// footer
 ?>
