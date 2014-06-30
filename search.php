@@ -1,17 +1,17 @@
 <?php
   /**********************************/
-  /*	 file name:search.php		*/
+  /*	 file name:search.php    */
   /*	 infor: category list	*/
   /**********************************/
 
-  include "config.inc.php";	//confi file
-  include "header.inc.php";	//header file
+  include "config.inc.php";	// confi file
+  include "header.inc.php";	// header file
 
-  //records in every page
+  // records in every page
   $each_page = EACH_PAGE;
-  //offset
+  // offset
   $offset = intval($_GET['offset']);
-  //category_kd
+  // category_id
   $category_id = intval($_GET['catid']);
 ?>
 <h2>product list</h2>
@@ -30,20 +30,19 @@ select product category
     <th width="20%">action</th>
   </tr>
   <?php	
-	//get total product records
+	// get total product records
 	$sql = "SELECT Count(*) FROM products WHERE category_id='$category_id'";
 	$result = mysql_query($sql);
 	$row = mysql_fetch_row($result);
-	$total = $row[0];	//total products
+	$total = $row[0];	// total products: size stored in the first row, data begin from row[1];
 
-	//$offset
+	// $offset
 	if($offset<0)
 		$offset = 0;
 	elseif($offset > $total)
 		$offset = $total;
-
 	
-	//get product list
+	// get product list
 	$sql = "SELECT product_id, product_name, photo, price FROM products 
 			WHERE category_id='$category_id'
 			ORDER BY post_datetime DESC
@@ -51,20 +50,20 @@ select product category
 	$result = mysql_query($sql);
 	$numrows = mysql_num_rows($result);
 
-	//number of records
+	// number of records
 	if($numrows>0)
 	{
 		
-		//output product list
+		// output product list
 		while($data = mysql_fetch_array($result))
 		{
-			//product ID
+			// product ID
 			$id = $data['product_id'];
-			//product name
+			// product name
 			$name = $data['product_name'];
-			//price
+			// price
 			$price = MoneyFormat($data['price']);
-			//photo
+			// photo
 			$photo = ($data['photo']) ? $data['photo'] : 'default.gif';
 
   ?>
@@ -91,7 +90,7 @@ select product category
 </table>
 
 <p>total <font color=red><b><?php echo $total ?></b></font> records &nbsp;<b>
-<?php
+<?php 
   //output previous page
   $last_offset = $offset - $each_page;
   if($last_offset<0)
