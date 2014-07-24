@@ -35,7 +35,7 @@ modify category
           <option value="0">-=choose category=-</option>
           <?php echo OptionCategories() ?>
         </select>
-        new name£º
+        new nameï¿½ï¿½
         <input name="category_name" size="20">
       </td>
     </tr>
@@ -59,6 +59,5 @@ modify category
     </tr>
   </table>
 </form>
-
 </body>
 </html>
