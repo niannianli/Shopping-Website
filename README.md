@@ -10,7 +10,3 @@ my goods: clothes/shoes/bags/books/music/videos/electronic products on this webs
 ==
 admin page, we can add/delete/modify/update our products on our website;
 
-==
-there is something wrong with the checkout process, I will work on it when I have time;
-
-
